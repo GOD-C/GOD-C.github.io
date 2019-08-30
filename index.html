@@ -1,413 +1,170 @@
+
 <!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="Loki" />
-
-
-    
-    
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="zh-cn">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <style> .article { opacity: 0;} </style>
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Hexo</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: true,
-        isPost: false,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
-    }
-</script>
-
-
-    <script> yiliaConfig.jquery_ui = [false]; </script>
-
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
-
-
-
-
-
+<html><head>
+	<meta charset="utf-8">
+	<title>布丁日常</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="description" content="布丁日常">
+	<meta name="keywords" content="布丁日常">
+	<meta name="author" content="BOX STUDIO">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">Loki</a></h1>
-        </hgroup>
 
-        
-
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+<body id="teaser-page">
+<div class="l-stage"><main>
+<div class="l-intro">
+  <div class="intro-btn-skip"><a id="s_st" href="#">S_ST</a></div>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Loki</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">Loki</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
-</nav>
-      <div class="body-wrap">
-  
-    <article id="post-活了一百万次的猫" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/09/28/活了一百万次的猫/" class="article-date">
-      <time datetime="2018-09-28T10:15:43.357Z" itemprop="datePublished">2018-09-28</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/28/活了一百万次的猫/">活了一百万次的猫</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>有一只100万年也不死的猫，<br>其实它死了100万次，又活了100万次。<br>是一只漂亮的虎皮花猫。<br>有100万个人在它死的时候哭过，<br>可是它连一次也没有哭过。<br><img src="http://img.kaoder.com/upload/attach/000/430/430626.jpg" alt=""><br>猫曾经是国王的猫。<br>猫讨厌国王，国王总是发动战争，<br>还把猫用一个漂亮的篮子装起来，带到战场上。<br>有一天，猫被一只冷箭射死了。<br>国王捧着猫哭了起来，<br>仗也不打了，回到了王宫，<br>把它埋在了院子里。<br><img src="http://img.kaoder.com/upload/attach/000/430/430627.jpg" alt=""><br>猫曾经是水手的猫。<br>猫讨厌大海，<br>水手带它走遍了全世界的大海和全世界的码头。<br>有一天，猫从船上掉了下来淹死了。<br>水手用网子把猫捞了上来，抱着它大哭起来，<br>把它埋到了一个遥远的港口的树下。<br><img src="http://img.kaoder.com/upload/attach/000/430/430628.jpg" alt=""></p>
-<p>猫还曾经是一个魔术师的猫、<br>曾经是一个小偷的猫、<br>曾经是一个孤零零的老太太的猫、<br>曾经是一个小女孩的猫，<br>它被锯死过、被狗咬死过、老死过，<br>还被背孩子的带子勒死过，<br>不过<br>它已经不在乎死亡了。<br><img src="http://img.kaoder.com/upload/attach/000/430/430629.jpg" alt=""></p>
-<p>后来，<br>猫就谁的猫也不是了。<br>它成了一只野猫。<br>它头一次变成了自己的猫。<br>它最喜欢自己了，<br>漂亮的虎皮花猫终于变成了漂亮的野猫。<br>母猫们都想嫁给他，<br>有的给它大鱼，<br>有给它上等的老鼠，<br>它说：“我可死过一百万次呢！”<br>它比谁都喜欢自己。<br><img src="http://img.kaoder.com/upload/attach/000/430/430634.jpg" alt=""></p>
-<p>只有一只猫连看也不看它一眼，<br>一只美丽的白猫。<br>它走过去说：<br>“我可死过一百万次呢！”<br>“是吗？”白猫只说了这么一声。<br>它有点生气了，<br>因为它太喜欢自己了。<br>第二天、第三天，<br>它都走到白猫的身边，<br>说：“你还一次也没活完吧？”<br>“是吗？”白猫只说了这么一声。<br>有一天，它在白猫的面前翻了三个跟头，<br>说：“我呀，曾经是马戏团的猫呢。”<br>“是吗？”白猫只说了这么一声。<br>“我呀，我死过100万次……”<br>说到一半的时候，<br>它问白猫，“我可以呆在你身边吗？”<br>“行呀。”白猫说。<br>就这样，<br>它一直呆在了花猫的身边。<br><img src="http://img.kaoder.com/upload/attach/000/430/430636.jpg" alt=""><br>白猫生了好多可爱的小猫。<br> 它再也不说“我呀，我死过100万次……”了。<br> 它比喜欢自己，还要喜欢白猫和小猫们。<br><img src="http://img.kaoder.com/upload/attach/000/430/430638.jpg" alt=""><br>小猫们很快就长大了，<br>走掉了。<br>它满足地说：<br>“它们都成了出色的野猫啦。”<br>“是啊。”白猫说，<br>嗓子眼儿里发出了温柔的“咕噜咕噜”声。<br>白猫已经成了一个老奶奶了，<br>它对白猫更温柔了，<br>它想和白猫永远地活下去。<br><img src="http://img.kaoder.com/upload/attach/000/430/430639.jpg" alt=""></p>
-<p>有一天，<br>白猫在它身边静静地不动了。<br>它哭了起来，<br>从夜里哭到早上，<br>又从早上哭到夜里，<br>它哭了有100万次。<br>一天中午，它的哭声停止了。<br>它在白猫的身边静静地不动了。  </p>
-<p>猫再也没有起死回生过。<br><img src="http://img.kaoder.com/upload/attach/000/430/430640.jpg" alt=""></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
+<div class="l-main">
+	<div class="l-first">
+		<div class="first-bg"></div>	
+		<div class="first-flare-wrap">
+			<div class="first-flare01"></div>
+			<div class="first-flare02"></div>
+		</div>	
+		<div class="first-megumi-back"></div>
+		<div class="first-megumi-front"></div>	
+		<div class="first-text-wrap">
+			<div class="first-text-main">
+				<img src="./images/teaser/main_text.png" width="416" height="442" class="pcv">
+				<img src="./images/teaser/main_text_sp.png" class="spv">
+			</div>
+			<div class="first-text">
+				<span class="t1"></span>
+				<span class="t2"></span>
+				<span class="t3"></span>
+				<span class="t4"></span>
+				<span class="t5"></span>
+				<span class="t6"></span>
+				<span class="t7"></span>
+				<span class="t8"></span>
+				<span class="t9"></span>
+				<span class="t10"></span>
+				<span class="t11"></span>
+				<span class="t12"></span>
+				<span class="t13"></span>
+				<span class="t14"></span>
+				<span class="t15"></span>
+				<span class="t16"></span>
+				<span class="t17"></span>
+				<span class="t18"></span>
+				<span class="t19"></span>
+				<span class="t20"></span>
+				<span class="t21"></span>
+				<span class="t22"></span>
+				<span class="t23"></span>
+				<span class="t24"></span>
+				<span class="t25"></span>
+				<span class="t26"></span>
+				<span class="t27"></span>
+				<span class="t28"></span>
+				<span class="t29"></span>
+				<span class="t30"></span>
+				<span class="t31"></span>
+			</div>
+		</div>	
+		<div class="sakura-front">
+			<div class="sakura-front-l"></div>
+			<div class="sakura-front-m"></div>
+			<div class="sakura-front-s"></div>
+		</div>
+	</div>
+	<div class="l-fix"></div>
+	<div class="l-second">
+		<div class="sakura-back">
+			<div class="sakura-back-l"></div>
+			<div class="sakura-back-m"></div>
+			<div class="sakura-back-s"></div>
+		</div>
+		<!-- <div class="l-movie">
+			<div class="movie-ss"></div>
+			<div id="movie-player"></div>
+			<div class="movie-btn">
+				<div class="movie-btn-play">
+					<a  href="javascript:;">
+						
+					</a>
+				</div>
+			</div>
+		</div> -->
+		<div class="l-news-wrap">
+			<div class="l-news">
+				<div class="news-btn-more">
+					<a  href="javascript:;">亲爱的小雪</a>
+				</div>
+				
+			</div>
+			<div class="l-twitter">
+                    <!-- <div class="link-btn-1st_site pcv">
+                            <a  href="javascript:;">我爱小雪</a>
+                        </div> -->
+				<div class="twitter-btn-more">
+					<a  href="javascript:;">今天是我们相识</a>
+				</div>
+				<div class="link-btn-1st_site">
+					<a class="text" href="javascript:;">我爱小雪</a>
+				</div>
+				<div class="link-btn-radio">
+					<a  href="javascript:;">我永远喜欢小雪的小笼包</a>
+				</div>
+			</div>
+		</div>
+		<footer class="l-footer">
+		  <p class="footer-copy">Copyright © 墨剑生</p>
+		</footer>
+	</div>
 </div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2016-2018 Loki
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
-
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
-</div>
+</main>
+</div><script src="./scripts/libs.min.js">
+</script><script src="./scripts/functions.min.js"></script>
 <script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
+    function timeElapse(date){
+    var current = Date(); 
+    var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+    var days = Math.floor(seconds / (3600 * 24)+31);
+    seconds = seconds % (3600 * 24);
+    var hours = Math.floor(seconds / 3600);
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    seconds = seconds % 3600;
+    var minutes = Math.floor(seconds / 60);
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    seconds = seconds % 60;
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    return {
+        days,
+        hours,
+        minutes,
+        seconds
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    }
+}
+function h () {
+            var together = new Date();
+            together.setFullYear(2018, 12,28); 			//时间年月日
+            together.setHours(19);						//小时	
+            together.setMinutes(0);					//分钟
+            together.setSeconds(0);					//秒前一位
+            together.setMilliseconds(0);				//秒第二位
+return together
+        }
+var a =h()
+console.log(a)
+setInterval(() => {
+    var result=timeElapse(h());
+    var str=''
+    str=`${result.days}天 ${result.hours}时 ${result.minutes}分 ${result.seconds}秒`
+$(".text").text(str)
+}, 1000);
 </script>
-  </div>
 </body>
 </html>
+
+
