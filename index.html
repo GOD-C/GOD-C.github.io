@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html><head>
+		
 	<meta charset="utf-8">
 	<title>小雪么么哒</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -14,9 +15,8 @@
 </head>
 
 <body id="teaser-page">
-		<audio src="./audio/lover.mp3" autoplay="autoplay" loop="loop">
-				
-				</audio>
+		<!-- <iframe allow="autoplay" src="./audio/lover.mp3" style="display: none"></iframe> -->
+		<audio id="audio" muted="true" src="./audio/lover.mp3"  autoplay></audio>
 <div class="l-stage"><main>
 <div class="l-intro">
   <div class="intro-btn-skip"><a id="s_st" href="#">S_ST</a></div>
@@ -124,6 +124,20 @@
 </div><script src="./scripts/libs.min.js">
 </script><script src="./scripts/functions.min.js"></script>
 <script>
+
+	$("body").on("touchend",function(){
+		console.log('aa')
+		var myAudio = document.getElementById("audio");
+	myAudio.loop=true;
+	myAudio.muted=false;
+	myAudio.play()
+	})
+	
+	
+
+	
+
+	 
     function timeElapse(date){
     var current = Date(); 
     var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
