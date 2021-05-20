@@ -2544,8 +2544,7 @@ img.spv {
     border-color: #00c6ff;
     border-radius: 5px;
     border-radius: 1.5625vw;
-    margin: 40px auto;
-    margin: 12.5vw auto;
+    margin-top: 11px;
   }
   .twitter-btn-more a {
     /*padding: 23px 0;
